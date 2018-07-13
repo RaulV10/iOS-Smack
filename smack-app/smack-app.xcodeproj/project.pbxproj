@@ -22,6 +22,7 @@
 		B7A3978B20F906FA00144562 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3978A20F906FA00144562 /* UserDataService.swift */; };
 		B7A3978D20F9196600144562 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3978C20F9196600144562 /* AvatarPickerVC.swift */; };
 		B7A3978F20F91C1E00144562 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3978E20F91C1E00144562 /* AvatarCell.swift */; };
+		B7A3979120F9374B00144562 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3979020F9374B00144562 /* CircleImage.swift */; };
 		B7DEA26920ED9A69003A558D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEA26820ED9A69003A558D /* Constants.swift */; };
 		B7DEA26B20ED9FA5003A558D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEA26A20ED9FA5003A558D /* LoginVC.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		B7A3978A20F906FA00144562 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		B7A3978C20F9196600144562 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		B7A3978E20F91C1E00144562 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		B7A3979020F9374B00144562 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B7DEA26820ED9A69003A558D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B7DEA26A20ED9FA5003A558D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				B74B99B020ED57B90091C49B /* GradientView.swift */,
 				B777A1BC20F7DE2E00E41850 /* RoundedButton.swift */,
 				B7A3978E20F91C1E00144562 /* AvatarCell.swift */,
+				B7A3979020F9374B00144562 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				B74B99AF20ED4D9D0091C49B /* ChannelVC.swift in Sources */,
 				B7A3978D20F9196600144562 /* AvatarPickerVC.swift in Sources */,
 				B777A1BD20F7DE2F00E41850 /* RoundedButton.swift in Sources */,
+				B7A3979120F9374B00144562 /* CircleImage.swift in Sources */,
 				B74B99AD20ED4D8B0091C49B /* ChatVC.swift in Sources */,
 				B7A3978B20F906FA00144562 /* UserDataService.swift in Sources */,
 				B76D726F20EED04C008C511D /* CreateAccountVC.swift in Sources */,
