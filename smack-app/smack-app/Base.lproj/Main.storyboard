@@ -221,6 +221,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLoginPressed:" destination="tra-F4-fCz" eventType="touchUpInside" id="GU1-ey-8UQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-eV-Lmb">
                                 <rect key="frame" x="62.666666666666657" y="184" width="249.99999999999997" height="86"/>
@@ -282,6 +285,10 @@
                                     <action selector="btnCreateAccountPressed:" destination="tra-F4-fCz" eventType="touchUpInside" id="3s7-SM-J5e"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-wc-Vc1">
+                                <rect key="frame" x="169" y="267.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.28235294119999998" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -290,8 +297,10 @@
                             <constraint firstItem="o1g-eV-Lmb" firstAttribute="top" secondItem="XH9-y7-w5X" secondAttribute="bottom" constant="40" id="76z-oO-zCe"/>
                             <constraint firstItem="XH9-y7-w5X" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="EHa-kk-wmE"/>
                             <constraint firstItem="XH9-y7-w5X" firstAttribute="top" secondItem="E64-zv-KFj" secondAttribute="top" constant="60" id="HKt-jB-zRV"/>
+                            <constraint firstItem="5qc-wc-Vc1" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="JTW-el-tey"/>
                             <constraint firstItem="o1g-eV-Lmb" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="Nmb-sD-vV5"/>
                             <constraint firstItem="uQY-41-UIs" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="QsL-I4-rg6"/>
+                            <constraint firstItem="5qc-wc-Vc1" firstAttribute="centerY" secondItem="Wxe-O5-MTr" secondAttribute="centerY" constant="-120" id="e0m-qu-kv3"/>
                             <constraint firstItem="cBM-2J-TrV" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="k5D-U6-ANz"/>
                             <constraint firstItem="E64-zv-KFj" firstAttribute="trailing" secondItem="nWt-MN-qer" secondAttribute="trailing" constant="16" id="uyv-mf-SJV"/>
                             <constraint firstItem="nWt-MN-qer" firstAttribute="top" secondItem="E64-zv-KFj" secondAttribute="top" constant="8" id="zDi-Jr-h5j"/>
@@ -299,6 +308,9 @@
                         <viewLayoutGuide key="safeArea" id="E64-zv-KFj"/>
                     </view>
                     <connections>
+                        <outlet property="spinner" destination="5qc-wc-Vc1" id="DE5-47-nny"/>
+                        <outlet property="txtPassword" destination="RXP-wg-65B" id="3s2-iz-Pla"/>
+                        <outlet property="txtUsername" destination="D4C-Lg-6PM" id="U69-et-eWC"/>
                         <segue destination="UAm-g1-ONy" kind="show" identifier="toCreateAccount" id="L30-XE-8F4"/>
                     </connections>
                 </viewController>
