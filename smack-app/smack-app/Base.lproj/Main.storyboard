@@ -104,6 +104,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTA-aZ-PV8">
                                 <rect key="frame" x="273" y="107.66666666666667" width="22" height="22.000000000000014"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="hfL-Ox-Zld" eventType="touchUpInside" id="u4q-Th-e3B"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kX9-cG-BB8" customClass="CircleImage" customModule="smack_app" customModuleProvider="target">
                                 <rect key="frame" x="16" y="683" width="75" height="75"/>
