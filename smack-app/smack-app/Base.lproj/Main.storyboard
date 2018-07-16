@@ -293,7 +293,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-wc-Vc1">
-                                <rect key="frame" x="169" y="267.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="169" y="237.66666666666663" width="37" height="37"/>
                                 <color key="color" red="0.28235294119999998" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -307,7 +307,7 @@
                             <constraint firstItem="5qc-wc-Vc1" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="JTW-el-tey"/>
                             <constraint firstItem="o1g-eV-Lmb" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="Nmb-sD-vV5"/>
                             <constraint firstItem="uQY-41-UIs" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="QsL-I4-rg6"/>
-                            <constraint firstItem="5qc-wc-Vc1" firstAttribute="centerY" secondItem="Wxe-O5-MTr" secondAttribute="centerY" constant="-120" id="e0m-qu-kv3"/>
+                            <constraint firstItem="5qc-wc-Vc1" firstAttribute="centerY" secondItem="Wxe-O5-MTr" secondAttribute="centerY" constant="-150" id="e0m-qu-kv3"/>
                             <constraint firstItem="cBM-2J-TrV" firstAttribute="centerX" secondItem="Wxe-O5-MTr" secondAttribute="centerX" id="k5D-U6-ANz"/>
                             <constraint firstItem="E64-zv-KFj" firstAttribute="trailing" secondItem="nWt-MN-qer" secondAttribute="trailing" constant="16" id="uyv-mf-SJV"/>
                             <constraint firstItem="nWt-MN-qer" firstAttribute="top" secondItem="E64-zv-KFj" secondAttribute="top" constant="8" id="zDi-Jr-h5j"/>
