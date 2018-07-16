@@ -75,6 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="btnMenu" destination="yBy-us-FAz" id="5YP-AU-oCP"/>
+                        <outlet property="lblChannelName" destination="Cho-w8-h8c" id="H5B-tT-EHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SnQ-ZV-EY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
