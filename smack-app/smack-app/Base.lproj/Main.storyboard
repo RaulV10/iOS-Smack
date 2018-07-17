@@ -142,6 +142,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me5-Gc-6SL">
+                                <rect key="frame" x="8" y="716" width="0.0" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -150,12 +156,15 @@
                             <constraint firstItem="UlG-UM-avf" firstAttribute="trailing" secondItem="zR2-Y1-GMa" secondAttribute="trailing" constant="16" id="8rm-65-Xdm"/>
                             <constraint firstItem="3zG-w7-djG" firstAttribute="leading" secondItem="UlG-UM-avf" secondAttribute="leading" id="G6g-2W-0rc"/>
                             <constraint firstItem="3zG-w7-djG" firstAttribute="top" secondItem="mWn-uy-1nS" secondAttribute="bottom" id="Gke-kt-vQ4"/>
+                            <constraint firstItem="Me5-Gc-6SL" firstAttribute="leading" secondItem="UlG-UM-avf" secondAttribute="leading" constant="8" id="Pb2-f4-Ddz"/>
                             <constraint firstItem="ha0-Aq-GDp" firstAttribute="bottom" secondItem="UlG-UM-avf" secondAttribute="bottom" id="Pw2-w6-Bnv"/>
                             <constraint firstItem="ha0-Aq-GDp" firstAttribute="top" secondItem="3zG-w7-djG" secondAttribute="bottom" constant="30" id="QrW-7E-abW"/>
+                            <constraint firstItem="ha0-Aq-GDp" firstAttribute="top" secondItem="Me5-Gc-6SL" secondAttribute="bottom" constant="8" id="asi-5o-hyt"/>
                             <constraint firstItem="zR2-Y1-GMa" firstAttribute="centerY" secondItem="ha0-Aq-GDp" secondAttribute="centerY" id="cfK-xT-LEr"/>
                             <constraint firstItem="ha0-Aq-GDp" firstAttribute="trailing" secondItem="UlG-UM-avf" secondAttribute="trailing" id="df8-sk-iss"/>
                             <constraint firstItem="ha0-Aq-GDp" firstAttribute="leading" secondItem="UlG-UM-avf" secondAttribute="leading" id="nse-5U-O7b"/>
                             <constraint firstItem="mWn-uy-1nS" firstAttribute="leading" secondItem="UlG-UM-avf" secondAttribute="leading" id="qXX-WL-bTB"/>
+                            <constraint firstItem="Me5-Gc-6SL" firstAttribute="top" secondItem="3zG-w7-djG" secondAttribute="bottom" constant="8" id="w2R-w8-gFO"/>
                             <constraint firstItem="UlG-UM-avf" firstAttribute="trailing" secondItem="3zG-w7-djG" secondAttribute="trailing" id="y57-YG-O39"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UlG-UM-avf"/>
@@ -163,6 +172,7 @@
                     <connections>
                         <outlet property="btnMenu" destination="yBy-us-FAz" id="5YP-AU-oCP"/>
                         <outlet property="lblChannelName" destination="Cho-w8-h8c" id="H5B-tT-EHd"/>
+                        <outlet property="lblTypingUsers" destination="Me5-Gc-6SL" id="f2E-V0-FME"/>
                         <outlet property="sendButton" destination="zR2-Y1-GMa" id="yzb-AN-KVQ"/>
                         <outlet property="tableView" destination="3zG-w7-djG" id="CG7-O5-VMk"/>
                         <outlet property="txtMessage" destination="ha0-Aq-GDp" id="ddQ-6z-Y3T"/>
