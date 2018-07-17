@@ -10,12 +10,18 @@ import UIKit
 
 class ChatVC: UIViewController {
 
+    // Outlets
     @IBOutlet weak var btnMenu: UIButton!
     @IBOutlet weak var lblChannelName: UILabel!
+    @IBOutlet weak var txtMessage: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.bindToKeyboard()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
+        view.addGestureRecognizer(tap)
+        
         btnMenu.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -29,6 +35,10 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             }
         }
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
     @objc func userDataDidChange(_ notif: Notification) {
@@ -47,6 +57,18 @@ class ChatVC: UIViewController {
         let channelName = MessageService.instance.selectedChannel?.channelTitle ?? ""
         lblChannelName.text = "#\(channelName)"
         getMessages()
+    }
+    
+    @IBAction func sendMessagePressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+            guard let message = txtMessage.text else { return }
+            
+            SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
+                self.txtMessage.text = ""
+                self.txtMessage.resignFirstResponder()
+            }
+        }
     }
     
     func onLoginGetMessages() {
